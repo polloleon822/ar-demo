@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AR Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+    model-viewer {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+<model-viewer
+  src="modelo.glb"
+  ar
+  ar-modes="scene-viewer webxr quick-look"
+  camera-controls
+  auto-rotate>
+</model-viewer>
+
+</body>
+</html>
